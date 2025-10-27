@@ -1,4 +1,4 @@
-import { obtenerBD,GuardarElemento } from "./BBDD.js"
+import { obtenerBD,GuardarElemento } from "../bbdd/BBDD.js"
 const formulario=document.getElementById("formulario")
 
 const alta=document.getElementById("alta")

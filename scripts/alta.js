@@ -1,4 +1,4 @@
-import { obtenerBD, GuardarElemento, buscarUsuario } from "../bbdd/BBDD.js"
+import { obtenerBD, GuardarElemento, buscarUsuario } from "../bbdd/BBDD"
 const mensaje=document.getElementById("mensaje")
 const formulario = document.getElementById("alta")
 formulario.addEventListener("submit", (e) => {
@@ -15,7 +15,7 @@ formulario.addEventListener("submit", (e) => {
         }
         i++;
     } while (booleano == false && array.lenght > i)*/
-     booleano=buscarUsuario(array,formulario.user.value);
+    booleano=buscarUsuario(array,formulario.user.value);
     if (booleano == false) {
         elemento.user = formulario.user.value
         elemento.password = formulario.pass.value
