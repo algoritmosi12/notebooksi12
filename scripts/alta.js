@@ -1,4 +1,4 @@
-import { obtenerBD, GuardarElemento, buscarUsuario } from "./BBDD.js"
+import { obtenerBD, GuardarElemento, buscarUsuario } from "../bbdd/BBDD.js"
 const mensaje=document.getElementById("mensaje")
 const formulario = document.getElementById("alta")
 formulario.addEventListener("submit", (e) => {
