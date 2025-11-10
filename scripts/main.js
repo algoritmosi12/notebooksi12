@@ -11,7 +11,7 @@ formulario.enviar.addEventListener("click",(e)=>{
     let booleano = false
     do{
         if (array[i].user == formulario.nombre.value && array[i].password == formulario.contrasena.value){
-            window.location.href="index2.html"// me reenvia a la pantalla de index2
+            window.location.href="../paginas/alta.html"// me reenvia a la pantalla de index2
             console.log("funciona bien bienvenido")
             booleano = true
         }
