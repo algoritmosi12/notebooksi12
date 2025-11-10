@@ -1,1 +1,1 @@
-import { buscarUsuario } from "./BBDD.js"
+import { buscarUsuario } from "../bbdd/BBDD"

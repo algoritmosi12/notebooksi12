@@ -5,8 +5,8 @@ export function obtenerBD(){
     if (datos === null){
         const BBDD = [
             {
-                "user" : "nahuel",
-                "password" : "nahuel1234",
+                "user" : "admin",
+                "password" : "admin",
                 
             }
         ];
