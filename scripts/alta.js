@@ -1,6 +1,7 @@
 import { obtenerBD, GuardarElemento, buscarUsuario } from "../bbdd/BBDD.js"
 const mensaje=document.getElementById("mensaje")
 const formulario = document.getElementById("alta")
+const volver = document.getElementById("volver")
 formulario.addEventListener("submit", (e) => {
     e.preventDefault()
     //comprobar que el usuario no exista y en ese caso pushearlo dentro del local storage
@@ -22,4 +23,8 @@ formulario.addEventListener("submit", (e) => {
         console.log(GuardarElemento(elemento))///importado de BBDD.JS
         mensaje.textContent="EL USUARIO HA SIDO GUARDADO";
     }else{mensaje.textContent="EL USUARIO YA EXISTE";}
+})
+formulario.volver.addEventListener("click",(e)=>{
+    e.preventDefault()
+    window.location.href="../index.html"
 })
