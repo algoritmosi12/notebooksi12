@@ -22,7 +22,7 @@ btnEnviar.addEventListener("click", (e) => {
         ) {
             encontrado = true;
             console.log("funciona bien, bienvenido");
-            window.location.href = "../paginas/.html";
+            window.location.href = "paginas/menu.html";
         } else {
             console.log("usuario y clave incorrecto");
         }
